@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-sky-300">
+    <header
+      class="text-center text-2xl bg-pink-500 border-2 border-solid font-sans items-center"
+    >
+      <h1 class="text-white uppercase">
+        Ejercicio - Carga de datos atraves de formulario
+      </h1>
+      <h2>Proyecto de Ana Gabriela Ibarra</h2>
+      <img
+        class="w-32 h-32 rounded-full object-cover"
+        src="./Imagen/usuarios.png"
+        alt="Imagen de usuario"
+      />
+    </header>
+
+    <div class="bg-blue-500 text-black p-4 rounded-lg shadow-md">
+      
+      <form>
+        <table>
+          <thead>
+            <caption>
+              Ingrese los datos de los usuarios:
+            </caption>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label class="text-right">Nombre:</label></td>
+              <td><input type="text" width="25" id="txtNombre" /></td>
+            </tr>
+            <tr>
+              <td><label class="text-right">Edad:</label></td>
+              <td><input type="number" width="25" id="txtEdad" /></td>
+            </tr>
+            <tr>
+              <td><label class="text-right">Email:</label></td>
+              <td><input type="text" width="25" id="txtEmail" /></td>
+            </tr>
+            <tr>
+              <td><label class="text-right">Teléfono:</label></td>
+              <td><input type="text" width="25" id="txtTelefono" /></td>
+            </tr>
+            <tr>
+              <td><label class="text-right">Activo:</label></td>
+              <td><input type="checkbox" width="25" id="chkActivo" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button  class="bg-purple-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="guardar">
+                  Guardar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+    <div class="bg-green-500 text-black p-4 h-96 rounded-lg shadow-md">
+      <h1>Lista de Usuarios</h1>
+      <table class="table-auto w-full bg-white border border-gray-300 cursor-not-allowed">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">ID</th>
+            <th class="border border-gray-300 px-4 py-2">Nombre</th>
+            <th class="border border-gray-300 px-4 py-2">Edad</th>
+            <th class="border border-gray-300 px-4 py-2">Email</th>
+            <th class="border border-gray-300 px-4 py-2">Teléfono</th>
+            <th class="border border-gray-300 px-4 py-2">Activo</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+      </table>
+    </div>
+
+
+    <div class="bg-slate-900 text-white p-4 rounded-lg shadow-md">
+      Todos los derechos reservados &copy; <br />
+      <address>
+        Ana Gabriela Ibarra <br />
+        Localidad: Capilla del Monte <br />
+      </address>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
+
